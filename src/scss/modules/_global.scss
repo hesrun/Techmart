@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Manrope', sans-serif;
+    line-height: normal;
     font-optical-sizing: auto;
     font-weight: 500;
     font-size: 1rem;
@@ -65,4 +66,5 @@ h2 {
     inset: 0;
     z-index: -1;
     object-fit: cover;
+    object-position: center;
 }
