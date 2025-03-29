@@ -1,0 +1,68 @@
+@use '../helpers/helpers.scss' as *;
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    color: #f2ebe5;
+    @include scrollbars(0px, white, #0580b1);
+}
+.main {
+    flex: 1 0 auto;
+}
+.footer,
+.header {
+    flex-shrink: 0;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-gap);
+    padding-right: var(--container-gap);
+}
+.container-fluid {
+    max-width: 100%;
+    padding-left: var(--container-gap);
+    padding-right: var(--container-gap);
+}
+
+h1 {
+    font-family: 'Oks Free';
+    font-size: clamp(3.125rem, 7vw, 5.625rem);
+}
+h2 {
+    font-family: 'Oks Free';
+    font-size: clamp(1.875rem, 7vw, 3.75rem);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    &__link {
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 0.75rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.625rem;
+        @include hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.video {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    object-fit: cover;
+}

@@ -1,0 +1,59 @@
+@use '../helpers/helpers.scss' as *;
+
+.main-content {
+    max-width: 75rem;
+    display: grid;
+    gap: 2.5rem;
+    @include sm {
+        gap: 1.5rem;
+    }
+}
+
+.projects {
+    display: flex;
+    align-items: end;
+    @include lg {
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+    }
+    @include sm {
+        margin: 1.5rem 0;
+    }
+    &__list {
+        margin-top: -1.25rem;
+        column-count: 2;
+        column-gap: 7vw;
+        @include sm {
+            column-count: 1;
+        }
+    }
+    &__item {
+        padding-top: 1.25rem;
+    }
+    &__link {
+        text-transform: uppercase;
+        letter-spacing: 0.0938rem;
+        @include hover {
+            text-shadow: 0 0px 1px white;
+        }
+    }
+    &__other {
+        margin-left: 3vw;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.0938rem;
+        @include lg {
+            margin-left: 0;
+        }
+    }
+}
+
+.content-socials {
+    display: none;
+    @include sm {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,16 @@
+:root {
+    --container-gap: 4rem;
+    --container-width: 71.25rem;
+}
+
+$sm: 36rem;
+$md: 48rem;
+$lg: 62rem;
+$xl: 77.5rem;
+$xxl: 90rem;
+
+@media (max-width: $xl) {
+    :root {
+        --container-gap: 1rem;
+    }
+}
