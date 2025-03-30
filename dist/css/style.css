@@ -391,7 +391,7 @@ h2 {
 }
 
 .blocker {
-  background: none;
+  background: rgba(0, 0, 0, 0.2);
   padding: 1rem;
 }
 
@@ -399,7 +399,7 @@ h2 {
   max-width: 30rem;
   padding: 2.75rem;
   border-radius: 1.25rem;
-  background: rgba(242, 235, 229, 0.5);
+  background: #f2ebe5;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   color: #3a3736;
