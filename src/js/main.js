@@ -5,7 +5,6 @@ window.addEventListener('load', function () {
 document.addEventListener('DOMContentLoaded', (e) => {
     $('#toWrite').click(function () {
         $('#feedback').modal({
-            fadeDuration: 300,
             showClose: false,
         });
     });

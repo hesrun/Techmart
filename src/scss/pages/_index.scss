@@ -24,6 +24,10 @@
         margin-top: -1.25rem;
         column-count: 2;
         column-gap: 7vw;
+        &_3x {
+            column-count: 3;
+            column-gap: 3vw;
+        }
         @include sm {
             column-count: 1;
         }

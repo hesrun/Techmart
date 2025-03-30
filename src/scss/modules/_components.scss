@@ -44,6 +44,9 @@
     font-weight: 700;
     letter-spacing: 0.0938rem;
     transition: all 0.3s;
+    @include placeholder {
+        opacity: 0.5;
+    }
     &:focus {
         background: rgba(white, 0.5);
     }
